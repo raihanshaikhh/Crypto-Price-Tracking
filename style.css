@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+   font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  /* color: white; */
+}
+.main{
+/* From https://css.glass */
+background-color:white;
+border: 1px solid rgba(255, 255, 255, 0.3);
+ border-radius: 20px;
+height: 80%;
+width: 80%;
+align-items: center;
+justify-content: center;
+ padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.input{
+    display: flex;
+    gap: 15px;
+    
+}
+.input input{
+    padding: 8px;
+    border-radius: 12px;
+    outline: none;
+}
+input:focus {
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  border: none;
+  outline: none;
+ 
+}
+.search{
+    height: 25px;
+    
+}
+.result{
+    background-color: #CECECE;
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 300px;  
+    border-radius: 16px;
+    padding: 20px;
+    
+ 
+}
+
+.info{
+    margin: 10px;
+    margin-left: 42px;
+    background-color: whitesmoke;
+    border-radius:10px;
+    align-content: center;
+    padding: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3); 
+    display: flex;
+    width: 400px;
+    gap: 25px;
+    transition: transform 0.2s ease;
+    border: 1px solid ;
+}
+.info h3{
+    font-size: 24px;
+}
+.info:hover {
+  transform: translateY(-5px);
+}

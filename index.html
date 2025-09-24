@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crypto Price Tracker</title>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="main">
+        <div class="header">
+        <h1>
+            Crypto Price Tracker
+        </h1>
+        <div class="input">
+        <input type="text" placeholder="Search Coins" id="input">
+        <img class = "search"src="./big-magnifying-glass.png" id="search"> </div>
+        <div>
+        
+
+        
+        <div class="result">
+            <div class="info">
+            <h2>Current Price</h2>
+                <h3 id="current_price"></h3></div>
+            <div  class="info"><h2>23 Hour Change</h2>
+                <h3 id="24hrchange"></h3></div>
+            <div  class="info"><h2>market Cap</h2>
+                <h3 id="market_cap"></h3></div>
+                <canvas id="priceChart" width="400" height="200"></canvas>
+
+        </div>
+        
+        </div>
+        </div>
+        
+
+
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background:#111; color:#fff; text-align:center; font-family:sans-serif;">
+  <h2>Bitcoin Price (Last 7 Days)</h2>
+  <canvas id="cryptoChart" width="600" height="300"></canvas>
+
+  <script>
+    async function getCryptoData() {
+      // Fetch Bitcoin prices (last 7 days, daily)
+      const res = await fetch("https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7");
+      const data = await res.json();
+
+      // Extract dates & prices
+      const prices = data.prices.map(p => p[1]); // price is in second element
+      const labels = data.prices.map(p => {
+        const date = new Date(p[0]);
+        return `${date.getMonth()+1}/${date.getDate()}`;
+      });
+
+      // Render chart
+      const ctx = document.getElementById('cryptoChart');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'BTC Price (USD)',
+            data: prices,
+            borderColor: 'lime',
+            backgroundColor: 'rgba(0,255,0,0.2)',
+            fill: true,
+            tension: 0.3
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { labels: { color: 'white' } }
+          },
+          scales: {
+            x: { ticks: { color: 'white' } },
+            y: { ticks: { color: 'white' }, beginAtZero: false }
+          }
+        }
+      });
+    }
+
+    getCryptoData();
+  </script>
+</body>
+</html> -->
