@@ -21,12 +21,7 @@ Built with **HTML, CSS, and JavaScript** using the [CoinGecko API](https://www.c
 - [Chart.js](https://www.chartjs.org/)
 
 ---
-
-## 📷 Demo Screenshot
-*(Add your project screenshot here once hosted)*  
-
----
-
+\\\\\\\\\\\\\\\\\\\\\
 ## 🌍 Live Demo
 👉 [View on GitHub Pages](https://your-username.github.io/crypto-tracker/)  
 
